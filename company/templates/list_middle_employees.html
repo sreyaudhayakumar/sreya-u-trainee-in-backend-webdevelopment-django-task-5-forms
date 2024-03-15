@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Middle Employees</title>
+</head>
+<body>
+    <h1>List of Middle Employees</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Department</th>
+                <th>Year of Join</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for middle_employee in middle_employees %}
+            <tr>
+                <td>{{ middle_employee.name }}</td>
+                <td>{{ middle_employee.age }}</td>
+                <td>{{ middle_employee.department }}</td>
+                <td>{{ middle_employee.yearofjoin }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

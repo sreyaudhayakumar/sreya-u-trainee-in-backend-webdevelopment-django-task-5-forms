@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List High Employees</title>
+</head>
+<body>
+    <h1>List of High Employees</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Department</th>
+                <th>Year of Join</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for high_employee in high_employees %}
+            <tr>
+                <td>{{ high_employee.name }}</td>
+                <td>{{ high_employee.age }}</td>
+                <td>{{ high_employee.department }}</td>
+                <td>{{ high_employee.yearofjoin }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
